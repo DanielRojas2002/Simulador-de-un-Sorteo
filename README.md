@@ -1,1 +1,3 @@
 # Simulador-de-un-Sorteo
+
+Este codigo simula un sorteo de un carro el cual te pide que eligas un numero del 1 al 5 y si le atinas al numero correcto te ganas el carro que seleccionaste este numero cambia es aleatorio , despues si no le atinas al numero del 1 al 5 entonces te pregunta si quieres ganarte el carro contestando 5 preguntas las cuales son de matematicas y esas preguntas lo numeros tambien son aleatorios y si contestas bien las 5 preguntas te sacas el carro y te da la fecha de entrega de ese carro anteriormente seleccionado (todo simulado :)) 
