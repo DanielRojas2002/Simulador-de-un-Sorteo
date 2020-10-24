@@ -134,3 +134,37 @@ class inventario():
                         print(f"lo siento has obtenido {contador} de 5")
                         print("Suerte para la proxima ")
                         print(separador)
+
+
+separador=("*"*40)     
+opcion="Si"
+
+try:
+    while opcion=="Si"or opcion=="si":
+        print("*"*20,"BIENVENIDO AL SORTEO DE CARROS","*"*20)
+        reloj=datetime.date.today()
+        print(f"El dia de hoy es :{reloj}")
+        print(separador)
+        print("Quieres entrar al menu=1")
+        menu=int(input(": "))
+    
+        if menu==1:
+            nombre=input("Ingresa tu nombre : ")
+            boleto=int(input("Dime el numero de tu boleto del 1 al 5: "))
+            carro=(input("Que carro quieres ganar: "))
+            hora=int(input("A que hora compraste el boleto: "))
+            minuto=int(input("A que minuto: "))
+            segundo=int(input("A que segundo: "))
+            objeto=inventario(nombre,boleto,carro,hora,minuto,segundo)
+            objeto.sorteo()
+            opcion=input("Deseas intentar otra vez\nSi\nNo\n: ")
+
+except:
+    print("*"*30)
+    print(f"Ocurrió un problema {sys.exc_info()[0]}")
+    print(f"Ocurrió un problema {sys.exc_info()[1]}")
+    print("Intenta respetar lo que se te pide :) ")
+    print("*"*30)
+
+finally:
+    print("*"*30,"Fin del Programa","*"*30) 
